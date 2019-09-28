@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+        
+    }
+    .box{
+          
+         border: 2px double skyblue;
+        
+         width: 90%;
+         text-align: center;
+        
+        
+         display: block;
+         border-radius: 3px;
+     background: linear-gradient(to right,#ffffcc, #33ccff);
+    
+    margin: 30px auto 0px auto;
+     padding: 15px;
+     border-radius: 50px;
+     color: black;
+        
+         font-family:cursive;
+         font-size: 23px;
+        
+    }
+=
+    .logo_IIUM
+{
+position: fixed;
+    margin: 0px 0px 0px 650px;   
+    width: 100px;
+    max-width:0%;
+    
+    
+    
+}
+
+ /*This is the css of contact us */
+.contact-section{
+  
+  background-size: cover;
+  padding: 40px 0;
+ 
+  z-index: -1;
+
+margin-left: 500px;
+ background: linear-gradient(to right,#ffffcc, #33ccff);
+
+ 
+  width: 500px;
+  border: 2px solid black;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.contact-section h1{
+  text-align: center;
+  color: #000;
+
+
+
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+ /*End styling of contact us */
+    
+    </style>    
+    </head>
+<body >
+    
+    <div class="header">
+        <div class="pages">
+        <ul>
+            <li>
+                <a href="index.html">ABOUT</a>
+                <a href="family.html">FAMILY</a>
+                <a href="favourite.html" >FAVOURITE</a>
+                <a href="Schedule.html" >SCHEDULE</a>
+                <a href="forms.html"  id="active">CONTACT</a>
+            
+            </li>
+        </ul>
+        </div>
+    
+    
+    </div>
+
+<div class="contact-section">
+
+  <h1 class ="lang" key ="contactus">Contact me</h1>
+  <div class="border"></div>
+  <form class="contact-form" action="index.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Your name">
+    <input type="email" class="contact-form-text" placeholder="Your email">
+    <input type="text" class="contact-form-text" placeholder="Your phone">
+    <textarea class="contact-form-text" placeholder="Your message"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+<!--End of the part of contact us -->
+
+
+
+ <footer class="footer">
+    <div class="contact">Contact Info</div>
+        <div>
+        <ul class="contact_logo">
+        <il>
+        <a href="https://www.facebook.com/people/Amer-Abdullah-Al-Jabre/100004005712990" target="_blank"><i class="fab fa-facebook-square"></i></a>    
+            
+        <a href="https://wa.me/+601121288754" target="_blank"><i class="fab fa-whatsapp-square"></i></a>  
+            
+        <a href="https://twitter.com/muhadarat_ksa?lang=en" target="_blank"><i class="fab fa-twitter-square"></i></a>    
+        <a href="https://github.com/amer2019IIUM" target="_blank"><i class="fab fa-github"></i></a>    
+            
+            
+        </il>    
+        </ul>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+<script >
+    $(document).ready(function(){
+  $(".contact-form-btn").click(function(){
+    alert("Thanks a lot.");
+  });
+});
+</script>
